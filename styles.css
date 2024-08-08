@@ -115,3 +115,18 @@ body {
     transform: scale(1.02);
     background-color: rgba(255, 255, 255, 0.2);
 }
+@media (max-width: 500px) {
+    .stopwatch-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #display {
+        font-size: 3rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
