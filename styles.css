@@ -1,0 +1,117 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.stopwatch-container:hover {
+    transform: scale(1.05);
+}
+
+#display {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #fffa65;
+    text-shadow: 0 0 10px rgba(255, 250, 101, 0.5);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, #56ab2f, #a8e063);
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background: linear-gradient(135deg, #76ba41, #b8ef80);
+    transform: translateY(-5px);
+}
+
+.btn.secondary {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    color: #ffffff;
+}
+
+.btn.secondary:hover {
+    background: linear-gradient(135deg, #59e3f5, #82a7f5);
+    transform: translateY(-5px);
+}
+
+.btn.danger {
+    background: linear-gradient(135deg, #e53935, #e35d5b);
+    color: #ffffff;
+}
+
+.btn.danger:hover {
+    background: linear-gradient(135deg, #f55757, #e57373);
+    transform: translateY(-5px);
+}
+
+.laps {
+    margin-top: 30px;
+}
+
+.laps h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.laps ul li {
+    font-size: 1rem;
+    margin: 8px 0;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.laps ul li:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.2);
+}
